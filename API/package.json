@@ -1,0 +1,27 @@
+{
+  "name": "medical-record-api",
+  "version": "1.0.0",
+  "description": "API for medical-record app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svrivera/fullStack-MedicalRecord.git"
+  },
+  "author": "Sebastian Rivera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svrivera/fullStack-MedicalRecord/issues"
+  },
+  "homepage": "https://github.com/svrivera/fullStack-MedicalRecord#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
