@@ -3,11 +3,30 @@ const mongoose = require('mongoose');
 // Imports routes file
 const routes = require('./routes');
 // Imports bodyParser to parse req and res
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
+// Imports CORS
+const cors = require('cors');
 
 
 // Creates the server
 const app = express();
+
+
+// // uncomment if you want to restrict the sites that can request the api
+// const whitelist = ['http://localhost:3000'];
+// const corsOptions = {
+//     origin: (origin, callback) => {
+//         const allowed = whitelist.some(domain => domain === origin);
+//         if (allowed) {
+//             callback(null, true);
+//         } else {
+//             callback(new Error('not allowed by CORS'))
+//         };
+//     }
+// }
+
+// Enables CORS
+app.use(cors());
 
 // Connects to MongoDB
 mongoose.Promise = global.Promise;

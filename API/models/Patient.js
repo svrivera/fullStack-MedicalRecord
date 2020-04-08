@@ -22,6 +22,10 @@ const patientsSchema = new Schema({
     symthoms: {
         type: String,
         trim: true
+    },
+    phone: {
+        type: String,
+        trim: true
     }
 });
 
